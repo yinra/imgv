@@ -21,4 +21,5 @@ DEFINES += QT_DEPRECATED_WARNINGS
 HEADERS += imgv.h
 SOURCES += imgv.cpp main.cpp
 QT += core gui widgets
+QMAKE_LFLAGS += -no-pie
 

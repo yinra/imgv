@@ -3,7 +3,7 @@
 
 #include <QLabel>
 #include <QDir>
-#include <QStringList>
+#include <QList>
 #include <QShortcut>
 
 
@@ -13,8 +13,10 @@ class Imgv : public QLabel
 public:
   explicit Imgv(QWidget *parent = 0);
   QDir *dir;
+  QFileInfoList files_list;
   QShortcut *right_key;
   QShortcut *left_key;
+  int c = 0, end_list;
 
 public slots:
   void nextimg();
